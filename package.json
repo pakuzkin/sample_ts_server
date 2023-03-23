@@ -1,0 +1,28 @@
+{
+  "name": "sample_ts_server",
+  "version": "1.0.0",
+  "description": "1. Initialize a new Node.js project     ~~~     npm init     ~~~ 2. Install the required dependencies by running the following command:     ~~~     npm install express cors @types/express @types/cors ts-node typescript nodemon --save-dev     ~~~ 3. Create a new tsconfig.json file. This tells TypeScript to transpile your code to ES6 and output the compiled files to the ./dist directory.     ~~~     {         \"compilerOptions\": {         \"target\": \"es6\",         \"module\": \"commonjs\",         \"esModuleInterop\": true,         \"outDir\": \"./dist\",         \"sourceMap\": true         },         \"include\": [         \"./src/**/*\"         ]     }     ~~~ 4. Create a new src directory in the root of your project, and create a new file called index.ts inside it.     ~~~     import express, { Application, Request, Response } from 'express';     import cors from 'cors';",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pakuzkin/sample_ts_server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pakuzkin/sample_ts_server/issues"
+  },
+  "homepage": "https://github.com/pakuzkin/sample_ts_server#readme",
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2"
+  }
+}
