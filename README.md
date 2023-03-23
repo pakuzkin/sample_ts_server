@@ -59,3 +59,7 @@
     ~~~
 8. Run the server by executing npm run start in your terminal. You should see the message "Server running on port 3000" in your console.
 9. Visit http://localhost:3000 in your web browser to see the "Hello, world!" message displayed.
+10. In src/index.ts add a ping endpoint that accepts a message param and call it via curl 
+   ~~~
+   curl http://localhost:3000/ping\?message\=hello
+   ~~~
